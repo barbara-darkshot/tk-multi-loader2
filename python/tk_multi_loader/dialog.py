@@ -818,7 +818,7 @@ class AppDialog(QtGui.QWidget):
                     entity=sg_item
                 )
                 if extra_details:
-                    for label, value in extra_details.iteritems():
+                    for label, value in extra_details.items():
                         msg += __make_table_row(label, value)
 
                 self.ui.details_header.setText("<table>%s</table>" % msg)
